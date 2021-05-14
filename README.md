@@ -6,10 +6,19 @@
   - PR 생성 
 
 
-## 용어 통일
+## 용어 통일/규칙
+
+- 고유명사로 사용되는 경우 (대문자로 시작) 번역하지 않음
+- 고유명사에 복수형이 붙을 경우 복수형은 없이 작성
+
+### 예시/특수 케이스
 
 - react: React
 - component(s): 컴포넌트
+  - Component: Component
+- element/Element/Elements: element/Element
+- props: 속성(props)
+- state: 상태(state)
 - method: 메소드
 
 ---
@@ -53,7 +62,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |1  | [React란 무엇입니까?](#React란-무엇입니까) |
 |2  | [React의 주요 특징은 무엇입니까?](#React의-주요-특징은-무엇입니까) |
 |3  | [JSX란 무엇인가.](#JSX란-무엇인가.)|
-|4  | [What is the difference between Element and Component?](#what-is-the-difference-between-element-and-component) |
+|4  | [Element와 Component의 차이](#element와-component의 차이) |
 |5  | [React components 만드는 법](#React-components-만드는-법) |
 |6  | [Functional Component 대신 Class Component를 쓰는 경우](#functional-component-대신-class-component를-쓰는-경우) |
 |7  | [What are Pure Components?](#what-are-pure-components) |
@@ -430,12 +439,12 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-4. ### What is the difference between Element and Component?
+4. ### Element와 Component의 차이
 
-    An *Element* is a plain object describing what you want to appear on the screen in terms of the DOM nodes or other components. *Elements* can contain other *Elements* in their props. Creating a React element is cheap. Once an element is created, it is never mutated.
-
-    The object representation of React Element would be as follows:
-
+    *Element* DOM노드나 다른 컴포넌트 형태로 화면에 그려지는 오브젝트이다. *Element*는 속성(props)으로 다른 *Element*를 포함할 수 있다. React element는 연산량이 적다.  
+    
+    element가 생성되면 다음 형태로 표현된다:  
+    
     ```javascript
     const element = React.createElement(
       'div',
@@ -444,7 +453,7 @@ You can download the PDF and Epub version of this repository from the latest run
     )
     ```
 
-    The above `React.createElement()` function returns an object:
+    위의 `React.createElement()` 함수는 다음 오브젝트를 반환한다:
 
     ```
     {
@@ -456,20 +465,20 @@ You can download the PDF and Epub version of this repository from the latest run
     }
     ```
 
-    And finally it renders to the DOM using `ReactDOM.render()`:
+    그리고 DOM에`ReactDOM.render()`를 통해 그려진다:
 
     ```html
     <div id='login-btn'>Login</div>
     ```
 
-    Whereas a **component** can be declared in several different ways. It can be a class with a `render()` method. Alternatively, in simple cases, it can be defined as a function. In either case, it takes props as an input, and returns a JSX tree as the output:
+    반면, **컴포넌트**는 여러 방법으로 선언된다. `render()` 메소드를 가진 클래스일 수도 있고, 함수일 수도 있다. 두 방법 모두 속성(props)을 전달받아 JSX 트리 형태를 반환한다:
 
     ```javascript
     const Button = ({ onLogin }) =>
       <div id={'login-btn'} onClick={onLogin}>Login</div>
     ```
 
-    Then JSX gets transpiled to a `React.createElement()` function tree:
+    그 후 JSX는 `React.createElement()` 함수 트리에 다음처럼 트랜스파일된다:
 
     ```javascript
     const Button = ({ onLogin }) => React.createElement(
