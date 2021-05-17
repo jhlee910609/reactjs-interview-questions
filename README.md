@@ -5,29 +5,21 @@
   - 질문 위치 찾아서 번역
   - PR 생성 
 
-
-<<<<<<< HEAD
 ## 용어 통일/규칙
 
 - 고유명사로 사용되는 경우 (대문자로 시작) 번역하지 않음
 - 고유명사에 복수형이 붙을 경우 복수형은 없이 작성
 
 ### 예시/특수 케이스
-
-- react: React
-- component(s): 컴포넌트
-  - Component: Component
-- element/Element/Elements: element/Element
-- props: 속성(props)
-- state: 상태(state)
-- method: 메소드
-
-## 용어 통일
 |  |  |
 | --- | --------- |
 |react  | React |
 |compnent(s)  | 컴포넌트 |
 |method  | 메소드|
+|element/Element/Elements | element/Element|
+|props|속성(props)|
+|state|상태(state)|
+|method|메소드|
 ---
 
 # React Interview Questions & Answers
