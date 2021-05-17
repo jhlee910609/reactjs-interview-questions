@@ -937,7 +937,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
     *Virtual DOM*은 간단한 3 가지 단계로 동작합니다.
 
-    1. UI 내부의 데이터가 바뀔 때마다 모든 UI가 *Virtual DOM*표현으로 다시 렌더링 됩니다.
+    1. 내부의 데이터가 바뀔 때마다 모든 UI가 *Virtual DOM*표현으로 다시 렌더링 됩니다.
 
         ![vdom](images/vdom1.png)
 
