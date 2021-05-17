@@ -21,16 +21,13 @@
 - props: 속성(props)
 - state: 상태(state)
 - method: 메소드
-=======
+
 ## 용어 통일
 |  |  |
 | --- | --------- |
 |react  | React |
 |compnent(s)  | 컴포넌트 |
 |method  | 메소드|
-
->>>>>>> fbf6a64 (번역 완료)
-
 ---
 
 # React Interview Questions & Answers
