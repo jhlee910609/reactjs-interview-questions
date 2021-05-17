@@ -3591,7 +3591,7 @@ You can download the PDF and Epub version of this repository from the latest run
 152. ### Flux란 무엇입니까?
      *Flux*는 고전적인 MVC 패턴을 대체하여 사용되는 application 설계 패러다임입니다. *Flux*는 프레임워크나 라이브러리가 아니라 React와 단반향 데이터 흐름(Unidirectional Data Flow)을 보완하기 위한 새로운 아키텍쳐의 한 종류입니다. Facebook 내부적으로 React를 사용할 때, 이 패턴을 사용합니다.
 
-     dispatcher, stores 그리고 views(components) 간의 작업 흐름은 다음과 뚜렷한 입/출력을 동반합니다.
+     dispatcher, stores, views간의 입/출력 데이터 흐름은 다음과 같습니다:
 
      ![flux](images/flux.png)
 
