@@ -941,7 +941,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
         ![vdom](images/vdom1.png)
 
-    2. 그리고 이전 DOM표현과 새로 렌더링 된 것의 차이점이 계산됩니다. 
+    2. 그리고 이전 DOM표현과 새로 렌더링 된 것의 차이를 계산합니다.
 
         ![vdom2](images/vdom2.png)
 
