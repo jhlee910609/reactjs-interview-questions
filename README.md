@@ -83,7 +83,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |22 | [Which is preferred option with in callback refs and findDOMNode()?](#which-is-preferred-option-with-in-callback-refs-and-finddomnode) |
 |23 | [Why are String Refs legacy?](#why-are-string-refs-legacy) |
 |24 | [What is Virtual DOM?](#what-is-virtual-dom) |
-|25 | [How Virtual DOM works?](#how-virtual-dom-works) |
+|25 | [Virtual DOM은 어떻게 동작하는가.](#Virtual-DOM은-어떻게-동작하는가.) |
 |26 | [What is the difference between Shadow DOM and Virtual DOM?](#what-is-the-difference-between-shadow-dom-and-virtual-dom) |
 |27 | [What is React Fiber?](#what-is-react-fiber) |
 |28 | [What is the main goal of React Fiber?](#what-is-the-main-goal-of-react-fiber) |
@@ -419,8 +419,7 @@ You can download the PDF and Epub version of this repository from the latest run
    **[⬆ Back to Top](#table-of-contents)**
     
 3. ### JSX란 무엇인가.
-
-        *JSX* 는 ECMAScript에 XML과 비슷한 문법을 사용할 수 있게 해줍니다.(*JavaScript XML*의 약자). 기본적으로 `React.createElement()`함수를 쉽게 사용할 수 있도록 문법적인 이점을 제공하는 것이죠. 이 문법적 이점은 우리가 자바스크립트를 이용해 HTML과 비슷한 template 문법을 표현할 수 있도록 해줍니다. 
+    *JSX* 는 ECMAScript에 XML과 비슷한 문법을 사용할 수 있게 해줍니다.(*JavaScript XML*의 약자). 기본적으로 `React.createElement()`함수를 쉽게 사용할 수 있도록 문법적인 이점을 제공하는 것이죠. 이 문법적 이점은 우리가 자바스크립트를 이용해 HTML과 비슷한 template 문법을 표현할 수 있도록 해줍니다. 
 
   아래의 예시에서 `<h1>` 태그안의 내용은 render 함수 내에서 JavaScript 함수로 반환됩니다.
 
@@ -943,19 +942,19 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-25. ### How Virtual DOM works?
+25. ### Virtual DOM은 어떻게 동작하는가.
 
-    The *Virtual DOM* works in three simple steps.
+    *Virtual DOM*은 간단한 3 가지 단계로 동작합니다.
 
-    1. Whenever any underlying data changes, the entire UI is re-rendered in Virtual DOM representation.
+    1. 내부의 데이터가 바뀔 때마다 모든 UI가 *Virtual DOM*표현으로 다시 렌더링 됩니다.
 
         ![vdom](images/vdom1.png)
 
-    2. Then the difference between the previous DOM representation and the new one is calculated.
+    2. 그리고 이전 DOM표현과 새로 렌더링 된 것의 차이를 계산합니다.
 
         ![vdom2](images/vdom2.png)
 
-    3. Once the calculations are done, the real DOM will be updated with only the things that have actually changed.
+    3. 계산이 끝나면, 실제 DOM 중 바뀐 부분만 갱신됩니다.
 
         ![vdom3](images/vdom3.png)
 
