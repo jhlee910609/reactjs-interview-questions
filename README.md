@@ -945,7 +945,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
         ![vdom2](images/vdom2.png)
 
-    3. 계산이 끝나면, 실제 DOM은 실제로 바뀐 부분만 업데이트될 것입니다.
+    3. 계산이 끝나면, 실제 DOM 중 바뀐 부분만 갱신됩니다.
 
         ![vdom3](images/vdom3.png)
 
