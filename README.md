@@ -1371,7 +1371,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
   1. fragments는 여분의 DOM node를 생성하기 않기 때문에 조금 더 빠르고, 적은 메모리를 사용합니다. 이것은 정말 크고, 깊은 trees에만 이점이 있습니다.
   2. *Flexbox*와 *CSS Grid*같은 몇몇 CSS 기능은 특별한 부모-자식 관계가 있어, 중간에 `divs(div tag)`를 추가했을때, 원하는 레이아웃을 유지하는 게 어려울 수 있습니다.
-  3. DOM Inspector가 덜 어수선합니다.
+  3. DOM이 덜 복잡하기 때문에 DOM 검사기로 살펴볼 때 좀 더 편합니다.
 
   **[⬆ Back to Top](#table-of-contents)**
 
