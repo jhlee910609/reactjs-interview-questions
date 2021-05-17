@@ -6,6 +6,7 @@
   - PR 생성 
 
 
+<<<<<<< HEAD
 ## 용어 통일/규칙
 
 - 고유명사로 사용되는 경우 (대문자로 시작) 번역하지 않음
@@ -20,6 +21,15 @@
 - props: 속성(props)
 - state: 상태(state)
 - method: 메소드
+=======
+## 용어 통일
+|  |  |
+| --- | --------- |
+|react  | React |
+|compnent(s)  | 컴포넌트 |
+|method  | 메소드|
+
+>>>>>>> fbf6a64 (번역 완료)
 
 ---
 
@@ -213,7 +223,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |150| [What are the advantages of Jest over Jasmine?](#what-are-the-advantages-of-jest-over-jasmine) |
 |151| [Give a simple example of Jest test case](#give-a-simple-example-of-jest-test-case) |
 |   | **React Redux** |
-|152| [What is Flux?](#what-is-flux) |
+|152| [Flux란 무엇입니까?](#Flux란-무엇입니까) |
 |153| [What is Redux?](#what-is-redux) |
 |154| [What are the core principles of Redux?](#what-are-the-core-principles-of-redux) |
 |155| [What are the downsides of Redux compared to Flux?](#what-are-the-downsides-of-redux-compared-to-flux) |
@@ -3578,14 +3588,12 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-152. ### What is flux?
+152. ### Flux란 무엇입니까?
+     *Flux*는 프레임워크나 라이브러리가 아닌 React와 단방향 데이터 흐름(Unidirectional Data Flow)을 보완하는 새로운 어플리케이션 설계방식 입니다. *Flux*는 고전적인 MVC 패턴을 대체할 수 있습니다. Facebook 내부에서 React를 사용할 때 이 패턴을 사용합니다.
 
-     *Flux* is an *application design paradigm* used as a replacement for the more traditional MVC pattern. It is not a framework or a library but a new kind of architecture that complements React and the concept of Unidirectional Data Flow. Facebook uses this pattern internally when working with React.
-
-     The workflow between dispatcher, stores and views components with distinct inputs and outputs as follows:
+     dispatcher, stores, views간의 입/출력 데이터 흐름은 다음과 같습니다:
 
      ![flux](images/flux.png)
-
 
    **[⬆ Back to Top](#table-of-contents)**
     
