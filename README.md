@@ -1,14 +1,17 @@
+# 목표
+- 한국판 React interview QNA 500제 완성 및 원작자에게 알리기
 # 리액트 인터뷰 Q & A 한국어 번역 및 Pull Request 규칙
 
-- 질문 하나당 feature/QNA-0000
-  - 질문 리스트 번역
-  - 질문 위치 찾아서 번역
-  - PR 생성 
+1. 질문 하나당 `feature/QNA-0000` 규칙의 branch를 생성합니다.
+  - 예를 들면, 25번 문항을 번역하려면  `feature/QNA-0025` branch에서 번역 작업을 해야합니다.
+2. 선택한 질문과 그 내용을 번역합니다.
+3. table의 링킹이 잘되어 있어야 합니다.
+4. `master` branch로 PR 합니다.
 
 ## 용어 통일/규칙
 
-- 고유명사로 사용되는 경우 (대문자로 시작) 번역하지 않음
-- 고유명사에 복수형이 붙을 경우 복수형은 없이 작성
+- 고유명사로 사용되는 경우 (대문자로 시작) 번역하지 않습니다.
+- 고유명사에 복수형이 붙을 경우 복수형은 없이 작성합니다.
 
 ### 예시/특수 케이스
 |  |  |
@@ -60,8 +63,8 @@ You can download the PDF and Epub version of this repository from the latest run
 |   | **Core React** |
 |1  | [React란 무엇입니까?](#React란-무엇입니까) |
 |2  | [React의 주요 특징은 무엇입니까?](#React의-주요-특징은-무엇입니까) |
-|3  | [JSX란 무엇인가.](#JSX란-무엇인가.)|
-|4  | [Element와 Component의 차이](#element와-component의 차이) |
+|3  | [JSX란 무엇인가.](#JSX란-무엇인가.) |
+|4  | [Element와 Component의 차이](#element와-component의-차이) |
 |5  | [React components 만드는 법](#React-components-만드는-법) |
 |6  | [Functional Component 대신 Class Component를 쓰는 경우](#functional-component-대신-class-component를-쓰는-경우) |
 |7  | [What are Pure Components?](#what-are-pure-components) |
@@ -104,7 +107,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |44 | [Is lazy function supports named exports?](#is-lazy-function-supports-named-exports) |
 |45 | [Why React uses className over class attribute?](#why-react-uses-classname-over-class-attribute) |
 |46 | [What are fragments?](#what-are-fragments) |
-|47 | [Why fragments are better than container divs?](#why-fragments-are-better-than-container-divs) |
+|47 | [왜 fragments가 divs container 보다 나은가요?](#왜-fragments가-divs-container-보다-나은가요?) |
 |48 | [What are portals in React?](#what-are-portals-in-react) |
 |49 | [What are stateless components?](#what-are-stateless-components) |
 |50 | [What are stateful components?](#what-are-stateful-components) |
@@ -1363,16 +1366,15 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-47. ### Why fragments are better than container divs?
-    Below are the list of reasons,
+47. ### 왜 fragments가 divs container 보다 나은가요?
+  아래 몇 가지 이유가 있습니다.
 
-    1. Fragments are a bit faster and use less memory by not creating an extra DOM node. This only has a real benefit on very large and deep trees.
-    2. Some CSS mechanisms like *Flexbox* and *CSS Grid* have a special parent-child relationships, and adding divs in the middle makes it hard to keep the desired layout.
-    3. The DOM Inspector is less cluttered.
+  1. fragments는 여분의 DOM node를 생성하기 않기 때문에 조금 더 빠르고, 적은 메모리를 사용합니다. 이것은 정말 크고, 깊은 trees에만 이점이 있습니다.
+  2. *Flexbox*와 *CSS Grid*같은 몇몇 CSS 기능은 특별한 부모-자식 관계가 있어, 중간에 `divs(div tag)`를 추가했을때, 원하는 레이아웃을 유지하는 게 어려울 수 있습니다.
+  3. DOM이 덜 복잡하기 때문에 DOM 검사기로 살펴볼 때 좀 더 편합니다.
 
+  **[⬆ Back to Top](#table-of-contents)**
 
-   **[⬆ Back to Top](#table-of-contents)**
-    
 48. ### What are portals in React?
 
     *Portal* is a recommended way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
