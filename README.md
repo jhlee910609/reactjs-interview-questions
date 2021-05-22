@@ -22,7 +22,6 @@
 |element/Element/Elements | element/Element|
 |props|속성(props)|
 |state|상태(state)|
-|method|메소드|
 ---
 
 # React Interview Questions & Answers
