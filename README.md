@@ -68,7 +68,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |6  | [Functional Component 대신 Class Component를 쓰는 경우](#functional-component-대신-class-component를-쓰는-경우) |
 |7  | [Pure Component란?](#pure-component란) |
 |8  | [What is state in React?](#what-is-state-in-react) |
-|9  | [React의 속성(props)이란?](#react의-속성-props-이란) |
+|9  | [React의 속성(props)이란?](#react의-속성props이란) |
 |10 | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props) |
 |11 | [Why should we not update the state directly?](#why-should-we-not-update-the-state-directly) |
 |12 | [What is the purpose of callback function as an argument of setState()?](#what-is-the-purpose-of-callback-function-as-an-argument-of-setstate)
