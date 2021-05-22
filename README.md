@@ -66,7 +66,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |4  | [Element와 Component의 차이](#element와-component의-차이) |
 |5  | [React components 만드는 법](#React-components-만드는-법) |
 |6  | [Functional Component 대신 Class Component를 쓰는 경우](#functional-component-대신-class-component를-쓰는-경우) |
-|7  | [What are Pure Components?](#what-are-pure-components) |
+|7  | [Pure Component란?](#pure-component란) |
 |8  | [What is state in React?](#what-is-state-in-react) |
 |9  | [What are props in React?](#what-are-props-in-react) |
 |10 | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props) |
@@ -525,9 +525,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-7. ### What are Pure Components?
+7. ### Pure Component란?
 
-    *`React.PureComponent`* is exactly the same as *`React.Component`* except that it handles the `shouldComponentUpdate()` method for you. When props or state changes, *PureComponent* will do a shallow comparison on both props and state. *Component* on the other hand won't compare current props and state to next out of the box. Thus, the component will re-render by default whenever `shouldComponentUpdate` is called.
+    *`React.PureComponent`* 는 `shouldComponentUpdate()` 메소드를 알아서 해준다는 점을 제외하고는 *`React.Component`* 와 동일합니다. *PureComponent*는 속성(props)이나 상태(state) 값이 바뀔 때, 속성과 상태에 대해 얕은(shallow) 비교를 한후 컴포넌트를 다시 그립니다. *Component*는 상태와 속성의 비교를 자동을 해주지 않기 때문에 `shouldComponentUpdate`가 호출될 때 컴포넌트를 다시 그려주게 됩니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
