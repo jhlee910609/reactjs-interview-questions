@@ -1,5 +1,5 @@
 # 목표
-- 한국판 React interview QNA 500제 완성 및 원작자에게 알리기
+- 한국판 React interview QNA 500제 완성 및 번역 100개 항목 이상 달성 시, 원작자에게 알리기
 # 리액트 인터뷰 Q & A 한국어 번역 및 Pull Request 규칙
 
 1. 질문 하나당 `feature/QNA-0000` 규칙의 branch를 생성합니다.
