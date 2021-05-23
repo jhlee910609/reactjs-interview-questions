@@ -582,7 +582,7 @@ You can download the PDF and Epub version of this repository from the latest run
     <Element reactProp={'1'} />
     ```
 
-    그럼 `reactProp` 라는 속성이 React의 내부 속성을 나타내는 오브젝트에 추가됩니다.
+   위와 같이 한다면 `reactProp` 라는 속성이 React의 내부 속성을 나타내는 오브젝트에 추가됩니다.
 
     ```
     props.reactProp
