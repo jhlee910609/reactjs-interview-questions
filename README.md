@@ -68,7 +68,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |6  | [Functional Component 대신 Class Component를 쓰는 경우](#functional-component-대신-class-component를-쓰는-경우) |
 |7  | [Pure Component란?](#pure-component란) |
 |8  | [What is state in React?](#what-is-state-in-react) |
-|9  | [What are props in React?](#what-are-props-in-react) |
+|9  | [React의 속성(props)이란?](#react의-속성props이란) |
 |10 | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props) |
 |11 | [Why should we not update the state directly?](#why-should-we-not-update-the-state-directly) |
 |12 | [What is the purpose of callback function as an argument of setState()?](#what-is-the-purpose-of-callback-function-as-an-argument-of-setstate)
@@ -566,23 +566,23 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-9. ### What are props in React?
+9. ### React의 속성(props)이란?
 
-    *Props* are inputs to components. They are single values or objects containing a set of values that are passed to components on creation using a naming convention similar to HTML-tag attributes. They are data passed down from a parent component to a child component.
+    *Props* 는 컴포넌트를 생성할 때 넘겨주는 값을 포함한 오브젝트 또는 단일 값입니다. 컴포넌트에 대한 입력 값이라고도 할 수 있습니다. 속성(props)값은 부모 컴포넌트에서 자식 컴포넌트로 전달됩니다.
 
-    The primary purpose of props in React is to provide following component functionality:
+    React 속성(props)의 주된 목적은 컴포넌트에 다음 기능을 제공하기 위함입니다:
+    
+    1. 컴포넌트에 원하는 데이터를 넘깁니다.
+    2. 상태(state)변화를 일으킵니다.
+    3. `render()` 메소드 내에서 `this.props.reactProp` 와같은 방식으로 접근합니다.
 
-    1. Pass custom data to your component.
-    2. Trigger state changes.
-    3. Use via `this.props.reactProp` inside component's `render()` method.
-
-    For example, let us create an element with `reactProp` property:
+    예시로 `reactProp` 속성을 받는 컴포넌트를 만들어 봅시다:
 
     ```jsx harmony
     <Element reactProp={'1'} />
     ```
 
-    This `reactProp` (or whatever you came up with) name then becomes a property attached to React's native props object which originally already exists on all components created using React library.
+   위와 같이 한다면 `reactProp` 라는 속성이 React의 내부 속성을 나타내는 오브젝트에 추가됩니다.
 
     ```
     props.reactProp
