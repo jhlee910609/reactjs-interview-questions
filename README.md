@@ -67,7 +67,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |5  | [React components 만드는 법](#React-components-만드는-법) |
 |6  | [Functional Component 대신 Class Component를 쓰는 경우](#functional-component-대신-class-component를-쓰는-경우) |
 |7  | [Pure Component란?](#pure-component란) |
-|8  | [What is state in React?](#what-is-state-in-react) |
+|8  | [React의 상태(state)란?](#react의-상태state란) |
 |9  | [React의 속성(props)이란?](#react의-속성props이란) |
 |10 | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props) |
 |11 | [Why should we not update the state directly?](#why-should-we-not-update-the-state-directly) |
@@ -532,11 +532,11 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-8. ### What is state in React?
+8. ### React의 상태(state)란?
 
-    *State* of a component is an object that holds some information that may change over the lifetime of the component. We should always try to make our state as simple as possible and minimize the number of stateful components.
+    컴포넌트의 *상태(State)*는 컴포넌트가 지닌 가변적인 정보를 담고있는 오브젝트입니다. 상태가 있는 컴포넌트는 가능하면 만들지 않는 것이 좋으며, 만들어야하는 경우 상태를 간단하게 관리하는 것이 좋습니다.
 
-    Let's create an user component with message state,
+    message라는 이름의 상태를 지닌 컴포넌트를 하나 만들어 봅시다,
 
 
     ```jsx harmony
@@ -561,7 +561,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
     ![state](images/state.jpg)
 
-    State is similar to props, but it is private and fully controlled by the component. i.e, It is not accessible to any component other than the one that owns and sets it.
+    상태는 속성(props)와 비슷하지만 컴포넌트 내에만 존재하며(private), 컴포넌트에 의해서만 변화합니다. 즉, 상태를 설정하는 컴포넌트 이외의 컴포넌트는 상태에 접근할 수 없습니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
