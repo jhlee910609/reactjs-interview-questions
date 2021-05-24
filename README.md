@@ -1,5 +1,5 @@
 # 목표
-- 한국판 React interview QNA 500제 완성 및 원작자에게 알리기
+- 한국판 React interview QNA 500제 완성 및 번역 100개 항목 이상 달성 시, 원작자에게 알리기
 # 리액트 인터뷰 Q & A 한국어 번역 및 Pull Request 규칙
 
 1. 질문 하나당 `feature/QNA-0000` 규칙의 branch를 생성합니다.
@@ -68,9 +68,9 @@ You can download the PDF and Epub version of this repository from the latest run
 |4  | [Element와 Component의 차이](#element와-component의-차이) |
 |5  | [React components 만드는 법](#React-components-만드는-법) |
 |6  | [Functional Component 대신 Class Component를 쓰는 경우](#functional-component-대신-class-component를-쓰는-경우) |
-|7  | [What are Pure Components?](#what-are-pure-components) |
-|8  | [What is state in React?](#what-is-state-in-react) |
-|9  | [What are props in React?](#what-are-props-in-react) |
+|7  | [Pure Component란?](#pure-component란) |
+|8  | [React의 상태(state)란?](#react의-상태state란) |
+|9  | [React의 속성(props)이란?](#react의-속성props이란) |
 |10 | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props) |
 |11 | [Why should we not update the state directly?](#why-should-we-not-update-the-state-directly) |
 |12 | [What is the purpose of callback function as an argument of setState()?](#what-is-the-purpose-of-callback-function-as-an-argument-of-setstate)
@@ -527,18 +527,18 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-7. ### What are Pure Components?
+7. ### Pure Component란?
 
-    *`React.PureComponent`* is exactly the same as *`React.Component`* except that it handles the `shouldComponentUpdate()` method for you. When props or state changes, *PureComponent* will do a shallow comparison on both props and state. *Component* on the other hand won't compare current props and state to next out of the box. Thus, the component will re-render by default whenever `shouldComponentUpdate` is called.
+    *`React.PureComponent`* 는 `shouldComponentUpdate()` 메소드를 알아서 해준다는 점을 제외하고는 *`React.Component`* 와 동일합니다. *PureComponent*는 속성(props)이나 상태(state) 값이 바뀔 때, 속성과 상태에 대해 얕은(shallow) 비교를 한후 컴포넌트를 다시 그립니다. *Component*는 상태와 속성의 비교를 자동을 해주지 않기 때문에 `shouldComponentUpdate`가 호출될 때 컴포넌트를 다시 그려주게 됩니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-8. ### What is state in React?
+8. ### React의 상태(state)란?
 
-    *State* of a component is an object that holds some information that may change over the lifetime of the component. We should always try to make our state as simple as possible and minimize the number of stateful components.
+    컴포넌트의 *상태(State)*는 컴포넌트가 지닌 가변적인 정보를 담고있는 오브젝트입니다. 상태가 있는 컴포넌트는 가능하면 만들지 않는 것이 좋으며, 만들어야하는 경우 상태를 간단하게 관리하는 것이 좋습니다.
 
-    Let's create an user component with message state,
+    message라는 이름의 상태를 지닌 컴포넌트를 하나 만들어 봅시다,
 
 
     ```jsx harmony
@@ -563,28 +563,28 @@ You can download the PDF and Epub version of this repository from the latest run
 
     ![state](images/state.jpg)
 
-    State is similar to props, but it is private and fully controlled by the component. i.e, It is not accessible to any component other than the one that owns and sets it.
+    상태는 속성(props)와 비슷하지만 컴포넌트 내에만 존재하며(private), 컴포넌트에 의해서만 변화합니다. 즉, 상태를 설정하는 컴포넌트 이외의 컴포넌트는 상태에 접근할 수 없습니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-9. ### What are props in React?
+9. ### React의 속성(props)이란?
 
-    *Props* are inputs to components. They are single values or objects containing a set of values that are passed to components on creation using a naming convention similar to HTML-tag attributes. They are data passed down from a parent component to a child component.
+    *Props* 는 컴포넌트를 생성할 때 넘겨주는 값을 포함한 오브젝트 또는 단일 값입니다. 컴포넌트에 대한 입력 값이라고도 할 수 있습니다. 속성(props)값은 부모 컴포넌트에서 자식 컴포넌트로 전달됩니다.
 
-    The primary purpose of props in React is to provide following component functionality:
+    React 속성(props)의 주된 목적은 컴포넌트에 다음 기능을 제공하기 위함입니다:
+    
+    1. 컴포넌트에 원하는 데이터를 넘깁니다.
+    2. 상태(state)변화를 일으킵니다.
+    3. `render()` 메소드 내에서 `this.props.reactProp` 와같은 방식으로 접근합니다.
 
-    1. Pass custom data to your component.
-    2. Trigger state changes.
-    3. Use via `this.props.reactProp` inside component's `render()` method.
-
-    For example, let us create an element with `reactProp` property:
+    예시로 `reactProp` 속성을 받는 컴포넌트를 만들어 봅시다:
 
     ```jsx harmony
     <Element reactProp={'1'} />
     ```
 
-    This `reactProp` (or whatever you came up with) name then becomes a property attached to React's native props object which originally already exists on all components created using React library.
+   위와 같이 한다면 `reactProp` 라는 속성이 React의 내부 속성을 나타내는 오브젝트에 추가됩니다.
 
     ```
     props.reactProp
@@ -1371,8 +1371,8 @@ You can download the PDF and Epub version of this repository from the latest run
   아래 몇 가지 이유가 있습니다.
 
   1. fragments는 여분의 DOM node를 생성하기 않기 때문에 조금 더 빠르고, 적은 메모리를 사용합니다. 이것은 정말 크고, 깊은 trees에만 이점이 있습니다.
-  2. *Flexbox*와 *CSS Grid* 같은 몇 가지 CSS mechanisms들은 특별한 부모-자식 관계가 있고, 중간에 `divs(div tag)`를 추가했을때, 원하는 레이아웃을 유지하는 게 어려울 수 있습니다.
-  3. DOM Inspector가 덜 어수선합니다.
+  2. *Flexbox*와 *CSS Grid*같은 몇몇 CSS 기능은 특별한 부모-자식 관계가 있어, 중간에 `divs(div tag)`를 추가했을때, 원하는 레이아웃을 유지하는 게 어려울 수 있습니다.
+  3. DOM이 덜 복잡하기 때문에 DOM 검사기로 살펴볼 때 좀 더 편합니다.
 
   **[⬆ Back to Top](#table-of-contents)**
 
