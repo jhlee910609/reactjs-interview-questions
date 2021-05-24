@@ -3590,7 +3590,8 @@ You can download the PDF and Epub version of this repository from the latest run
    **[⬆ Back to Top](#table-of-contents)**
     
 153. ### Redux란 무엇입니까?
-     *Redux*는 *Flux 디자인 패턴*으로 구성된 Javascript app을 위한 예측 가능한 *상태(state) container*입니다. Redux 는 React와 함께 사용될 수 있고, 다른 view 라이브러리와도 사용할 수 있습니다. Redux는 약 2KB 정도되는 작은 용량을 차지하며, 다른 모듈에 의존적이지 않습니다.
+
+     *Redux*는 *Flux 디자인 패턴*으로 구성된 Javascript app을 위한 예측 가능한 *상태(state) container*입니다. Redux 는 React와 같이 사용하거나 혹은 다른 view 라이브러리와도 사용할 수 있습니다. Redux는 약 2KB 정도되는 작은 용량을 차지하며, 다른 모듈에 의존적이지 않습니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
