@@ -602,7 +602,7 @@ You can download the PDF and Epub version of this repository from the latest run
     
 11. ### state를 직접 업데이트하면 안되는 이유
 
-    만약 state를 직접 업데이트하려고 하면 컴포넌트는 다시 렌더링 되지 않을 것입니다.
+    만약 state를 직접 업데이트하려고 시도하면 component는 다시 렌더링 되지 않을 것입니다.
 
     ```javascript
     //Wrong
