@@ -71,7 +71,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |7  | [Pure Component란?](#pure-component란) |
 |8  | [React의 상태(state)란?](#react의-상태state란) |
 |9  | [React의 속성(props)이란?](#react의-속성props이란) |
-|10 | [props와 state의 차이점은 무엇인가요?](#props와-state의-차이점은-무엇인가요?) |
+|10 | [props와 상태(state)의 차이점은 무엇인가요?](#props와-state의-차이점은-무엇인가요?) |
 |11 | [Why should we not update the state directly?](#why-should-we-not-update-the-state-directly) |
 |12 | [What is the purpose of callback function as an argument of setState()?](#what-is-the-purpose-of-callback-function-as-an-argument-of-setstate)
 |13 | [What is the difference between HTML and React event handling?](#what-is-the-difference-between-html-and-react-event-handling) |
