@@ -595,7 +595,7 @@ You can download the PDF and Epub version of this repository from the latest run
     
 10. ### props와 상태(state)의 차이점은 무엇인가요?
 
-    *props*와 *state* 모두 순수한 javascript 객체입니다. 두 객체 모두 렌더링 결과에 영행을 주는 정보를 가지고 있지만 component에 대한 기능이 다릅니다. props는 component에게 함수 파라미터와 유사하게 전달되는 반면, state는 함수내부에서 선언된 변수와 같이 component안에서 다뤄집니다.
+    *속성(props)*와 *상태(state)* 모두 그저 자바스크립트의 객체입니다. 두 객체 모두 렌더링 결과에 영행을 주는 정보를 가지고 있지만 컴포넌트에 대한 기능이 다릅니다. 상태(props)는 함수의 인자와 유사하게 컴포넌트에 전달되는 반면, (상태)state는 함수내부에서 선언된 변수와 같이 컴포넌트내에서 다뤄집니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
