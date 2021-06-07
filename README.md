@@ -72,7 +72,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |8  | [React의 상태(state)란?](#react의-상태state란) |
 |9  | [React의 속성(props)이란?](#react의-속성props이란) |
 |10 | [props와 상태(state)의 차이점은 무엇인가요?](#props와-상태state의-차이점은-무엇인가요?) |
-|11 | [Why should we not update the state directly?](#why-should-we-not-update-the-state-directly) |
+|11 | [상태(state)를 직접 업데이트하면 안되는 이유.](#상태state를-직접-업데이트하면-안되는-이유) |
 |12 | [What is the purpose of callback function as an argument of setState()?](#what-is-the-purpose-of-callback-function-as-an-argument-of-setstate)
 |13 | [What is the difference between HTML and React event handling?](#what-is-the-difference-between-html-and-react-event-handling) |
 |14 | [How to bind methods or event handlers in JSX callbacks?](#how-to-bind-methods-or-event-handlers-in-jsx-callbacks) |
@@ -600,23 +600,23 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-11. ### Why should we not update the state directly?
+11. ### 상태(state)를 직접 업데이트하면 안되는 이유
 
-    If you try to update state directly then it won't re-render the component.
+    상태(state)에 직접 접근하여 값을 변경하면 컴포넌트가 다시 렌더링 되지 않습니다.
 
     ```javascript
     //Wrong
     this.state.message = 'Hello world'
     ```
 
-    Instead use `setState()` method. It schedules an update to a component's state object. When state changes, the component responds by re-rendering.
+    대신 `setState()` 메소드를 이용해야합니다. `setState()`는 컴포넌트의 상태(state) 객체를 업데이트하도록 예약합니다. 이를 통해 상태(state)변화가 감지되면 component는 다시 렌더링됩니다.
 
     ```javascript
     //Correct
     this.setState({ message: 'Hello World' })
     ```
 
-    **Note:** You can directly assign to the state object either in *constructor* or using latest javascript's class field declaration syntax.
+     **Note:** 단, *생성자* 메소드나 자바스크립트의 클래스 변수 선언을 통해 상태(state)의 초기값을 직접 선언하는 것은 가능합니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
