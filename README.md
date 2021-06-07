@@ -609,7 +609,7 @@ You can download the PDF and Epub version of this repository from the latest run
     this.state.message = 'Hello world'
     ```
 
-    대신 `setState()` 메소드를 이용하세요. `setState()`는 component의 state 객체를 업데이트하도록 예약합니다. 이를 통해 state가 바뀌면 component는 다시 렌더링됩니다.
+    대신 `setState()` 메소드를 이용해야합니다. `setState()`는 컴포넌트의 상태(state) 객체를 업데이트하도록 예약합니다. 이를 통해 상태(state)변화가 감지되면 component는 다시 렌더링됩니다.
 
     ```javascript
     //Correct
