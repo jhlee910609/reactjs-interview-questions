@@ -17,13 +17,12 @@
 |  |  |
 | --- | --------- |
 |react  | React |
-|compnent(s)  | 컴포넌트 |
-|method  | 메소드|
+|compnent(s)  | component(컴포넌트) |
 |element/Element/Elements | element/Element|
-|props|속성(props)|
-|state|상태(state)|
+|props|props(속성)|
+|state|state(상태)|
 |method|메소드|
-|redux|redux|
+|redux|redux(리덕스)|
 ---
 
 # React Interview Questions & Answers
@@ -69,8 +68,8 @@ You can download the PDF and Epub version of this repository from the latest run
 |5  | [React components 만드는 법](#React-components-만드는-법) |
 |6  | [Functional Component 대신 Class Component를 쓰는 경우](#functional-component-대신-class-component를-쓰는-경우) |
 |7  | [Pure Component란?](#pure-component란) |
-|8  | [React의 상태(state)란?](#react의-상태state란) |
-|9  | [React의 속성(props)이란?](#react의-속성props이란) |
+|8  | [React의 state(상태)란?](#react의-상태state란) |
+|9  | [React의 props(속성)이란?](#react의-속성props이란) |
 |10 | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props) |
 |11 | [Why should we not update the state directly?](#why-should-we-not-update-the-state-directly) |
 |12 | [What is the purpose of callback function as an argument of setState()?](#what-is-the-purpose-of-callback-function-as-an-argument-of-setstate)
@@ -217,8 +216,8 @@ You can download the PDF and Epub version of this repository from the latest run
 |151| [Give a simple example of Jest test case](#give-a-simple-example-of-jest-test-case) |
 |   | **React Redux** |
 |152| [Flux란 무엇입니까?](#Flux란-무엇입니까) |
-|153| [Redux란 무엇입니까?](#Redux란-무엇입니까) |
-|154| [What are the core principles of Redux?](#what-are-the-core-principles-of-redux) |
+|153| [Redux(리덕스)란 무엇입니까?](#Redux(리덕스)란-무엇입니까) |
+|154| [Redux(리덕스)의 주요 원리는 무엇입니까?](#Redux(리덕스)의-주요-원리는-무엇입니까) |
 |155| [What are the downsides of Redux compared to Flux?](#what-are-the-downsides-of-redux-compared-to-flux) |
 |156| [What is the difference between mapStateToProps() and mapDispatchToProps()?](#what-is-the-difference-between-mapstatetoprops-and-mapdispatchtoprops) |
 |157| [Can I dispatch an action in reducer?](#can-i-dispatch-an-action-in-reducer) |
@@ -443,7 +442,7 @@ You can download the PDF and Epub version of this repository from the latest run
     
 4. ### Element와 Component의 차이
 
-    *Element* DOM노드나 다른 컴포넌트 형태로 화면에 그려지는 오브젝트이다. *Element*는 속성(props)으로 다른 *Element*를 포함할 수 있다. React element는 연산량이 적다.  
+    *Element* DOM노드나 다른 컴포넌트 형태로 화면에 그려지는 오브젝트이다. *Element*는 props(속성)으로 다른 *Element*를 포함할 수 있다. React element는 연산량이 적다.  
     
     element가 생성되면 다음 형태로 표현된다:  
     
@@ -473,7 +472,7 @@ You can download the PDF and Epub version of this repository from the latest run
     <div id='login-btn'>Login</div>
     ```
 
-    반면, **컴포넌트**는 여러 방법으로 선언된다. `render()` 메소드를 가진 클래스일 수도 있고, 함수일 수도 있다. 두 방법 모두 속성(props)을 전달받아 JSX 트리 형태를 반환한다:
+    반면, **컴포넌트**는 여러 방법으로 선언된다. `render()` 메소드를 가진 클래스일 수도 있고, 함수일 수도 있다. 두 방법 모두 props(속성)을 전달받아 JSX 트리 형태를 반환한다:
 
     ```javascript
     const Button = ({ onLogin }) =>
@@ -529,14 +528,14 @@ You can download the PDF and Epub version of this repository from the latest run
     
 7. ### Pure Component란?
 
-    *`React.PureComponent`* 는 `shouldComponentUpdate()` 메소드를 알아서 해준다는 점을 제외하고는 *`React.Component`* 와 동일합니다. *PureComponent*는 속성(props)이나 상태(state) 값이 바뀔 때, 속성과 상태에 대해 얕은(shallow) 비교를 한후 컴포넌트를 다시 그립니다. *Component*는 상태와 속성의 비교를 자동을 해주지 않기 때문에 `shouldComponentUpdate`가 호출될 때 컴포넌트를 다시 그려주게 됩니다.
+    *`React.PureComponent`* 는 `shouldComponentUpdate()` 메소드를 알아서 해준다는 점을 제외하고 *`React.Component`* 와 동일합니다. *PureComponent*는 props(속성)이나 state(상태) 값이 바뀔 때, 속성과 상태에 대해 얕은(shallow) 비교를 한후 컴포넌트를 다시 그립니다. *Component*는 상태와 속성의 비교를 자동을 해주지 않기 때문에 `shouldComponentUpdate`가 호출될 때 컴포넌트를 다시 그려주게 됩니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-8. ### React의 상태(state)란?
+8. ### React의 state(상태)란?
 
-    컴포넌트의 *상태(State)*는 컴포넌트가 지닌 가변적인 정보를 담고있는 오브젝트입니다. 상태가 있는 컴포넌트는 가능하면 만들지 않는 것이 좋으며, 만들어야하는 경우 상태를 간단하게 관리하는 것이 좋습니다.
+    컴포넌트의 *state(상태)*는 컴포넌트가 지닌 가변적인 정보를 담고있는 오브젝트입니다. 상태가 있는 컴포넌트는 가능하면 만들지 않는 것이 좋으며, 만들어야하는 경우 상태를 간단하게 관리하는 것이 좋습니다.
 
     message라는 이름의 상태를 지닌 컴포넌트를 하나 만들어 봅시다,
 
@@ -563,19 +562,19 @@ You can download the PDF and Epub version of this repository from the latest run
 
     ![state](images/state.jpg)
 
-    상태는 속성(props)와 비슷하지만 컴포넌트 내에만 존재하며(private), 컴포넌트에 의해서만 변화합니다. 즉, 상태를 설정하는 컴포넌트 이외의 컴포넌트는 상태에 접근할 수 없습니다.
+    상태는 props(속성)와 비슷하지만 컴포넌트 내에만 존재하며(private), 컴포넌트에 의해서만 변화합니다. 즉, 상태를 설정하는 컴포넌트 이외의 컴포넌트는 상태에 접근할 수 없습니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-9. ### React의 속성(props)이란?
+9. ### React의 props(속성)이란?
 
-    *Props* 는 컴포넌트를 생성할 때 넘겨주는 값을 포함한 오브젝트 또는 단일 값입니다. 컴포넌트에 대한 입력 값이라고도 할 수 있습니다. 속성(props)값은 부모 컴포넌트에서 자식 컴포넌트로 전달됩니다.
+    *Props* 는 컴포넌트를 생성할 때 넘겨주는 값을 포함한 오브젝트 또는 단일 값입니다. 컴포넌트에 대한 입력 값이라고도 할 수 있습니다. props(속성)값은 부모 컴포넌트에서 자식 컴포넌트로 전달됩니다.
 
-    React 속성(props)의 주된 목적은 컴포넌트에 다음 기능을 제공하기 위함입니다:
+    React props(속성)의 주된 목적은 컴포넌트에 다음 기능을 제공하기 위함입니다:
     
     1. 컴포넌트에 원하는 데이터를 넘깁니다.
-    2. 상태(state)변화를 일으킵니다.
+    2. state(상태)변화를 일으킵니다.
     3. `render()` 메소드 내에서 `this.props.reactProp` 와같은 방식으로 접근합니다.
 
     예시로 `reactProp` 속성을 받는 컴포넌트를 만들어 봅시다:
@@ -3591,18 +3590,20 @@ You can download the PDF and Epub version of this repository from the latest run
     
 153. ### Redux란 무엇입니까?
 
-     *Redux*는 *Flux 디자인 패턴*으로 구성된 Javascript app을 위한 예측 가능한 *상태(state) container*입니다. Redux 는 React와 같이 사용하거나 혹은 다른 view 라이브러리와도 사용할 수 있습니다. Redux는 약 2KB 정도되는 작은 용량을 차지하며, 다른 모듈에 의존적이지 않습니다.
+     *Redux*는 *Flux 디자인 패턴*으로 구성된 Javascript app을 위한 예측 가능한 *state(상태) container*입니다. Redux 는 React와 같이 사용하거나 혹은 다른 view 라이브러리와도 사용할 수 있습니다. Redux는 약 2KB 정도되는 작은 용량을 차지하며, 다른 모듈에 의존적이지 않습니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
     
-154. ### What are the core principles of Redux?
+154. ### Redux(리덕스)의 주요 원리는 무엇입니까?
+    
+    Redux(리덕스)는 아래와 같은 세 가지 중요한 원리(근본)를 따르고 있습니다.
 
-     Redux follows three fundamental principles:
+     1. **Single source of truth(단일 진실 공급원):** 전체 application의 state(상태)는 단일 스토어(store) 안의 객체(object) 트리 안에 저장됩니다. 단일 state(상태) 트리는 시간 경과에 따른 추적과 application을 디버깅하거나 검사하는 것을 쉽게 합니다.
 
-     1. **Single source of truth:** The state of your whole application is stored in an object tree within a single store. The single state tree makes it easier to keep track of changes over time and debug or inspect the application.
-     2. **State is read-only:** The only way to change the state is to emit an action, an object describing what happened. This ensures that neither the views nor the network callbacks will ever write directly to the state.
-     3. **Changes are made with pure functions:** To specify how the state tree is transformed by actions, you write reducers. Reducers are just pure functions that take the previous state and an action as parameters, and return the next state.
+     2. **State is read-only(상태는 읽기 전용이다.):** state(상태)를 바꾸는 방법은 어떤 일이 일어나는 구현한 객체(object)인 액션(action)을 실행시키는 방법 밖에 없습니다. 이는 view들과 네트워크 콜백이 직접 state(상태)에 직접적으로 기록되지 않음을 보장합니다.
+
+     3. **Changes are made with pure functions(순수 함수로 변경):** state(상태) 트리가 액션(action)에 의해 변환되는 방식을 특정하기 위해서는 Reducer(리듀서)를 작성해야 합니다. Reducer(리듀서)는 이전 state(상태)와 action(액션)을 파라미터로 받고, 다음 state(상태)를 반환하는 순수함수 입니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
