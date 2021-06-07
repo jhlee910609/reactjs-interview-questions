@@ -616,7 +616,7 @@ You can download the PDF and Epub version of this repository from the latest run
     this.setState({ message: 'Hello World' })
     ```
 
-     **Note:** 당신은 *constructor*메서드안에서나 javascript최신 문법인 class field declaration 문법을 이용해 state 객체에 직접 값을 할당할 수 있습니다.
+     **Note:** 단, *생성자* 메소드나 자바스크립트의 클래스 변수 선언을 통해 상태(state)의 초기값을 직접 선언하는 것은 가능합니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
