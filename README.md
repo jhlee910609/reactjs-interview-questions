@@ -71,7 +71,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |7  | [Pure Component란?](#pure-component란) |
 |8  | [React의 상태(state)란?](#react의-상태state란) |
 |9  | [React의 속성(props)이란?](#react의-속성props이란) |
-|10 | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props) |
+|10 | [props와 상태(state)의 차이점은 무엇인가요?](#props와-상태state의-차이점은-무엇인가요?) |
 |11 | [상태(state)를 직접 업데이트하면 안되는 이유.](#상태state를-직접-업데이트하면-안되는-이유) |
 |12 | [What is the purpose of callback function as an argument of setState()?](#what-is-the-purpose-of-callback-function-as-an-argument-of-setstate)
 |13 | [What is the difference between HTML and React event handling?](#what-is-the-difference-between-html-and-react-event-handling) |
@@ -593,9 +593,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-10. ### What is the difference between state and props?
+10. ### props와 상태(state)의 차이점은 무엇인가요?
 
-    Both *props* and *state* are plain JavaScript objects. While both of them hold information that influences the output of render, they are different in their functionality with respect to component. Props get passed to the component similar to function parameters whereas state is managed within the component similar to variables declared within a function.
+    *속성(props)*와 *상태(state)* 모두 그저 자바스크립트의 객체입니다. 두 객체 모두 렌더링 결과에 영행을 주는 정보를 가지고 있지만 컴포넌트에 대한 기능이 다릅니다. 상태(props)는 함수의 인자와 유사하게 컴포넌트에 전달되는 반면, (상태)state는 함수내부에서 선언된 변수와 같이 컴포넌트내에서 다뤄집니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
