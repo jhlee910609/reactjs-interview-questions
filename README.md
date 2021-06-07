@@ -600,7 +600,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-11. ### state를 직접 업데이트하면 안되는 이유
+11. ### 상태(state)를 직접 업데이트하면 안되는 이유
 
     만약 state를 직접 업데이트하려고 시도하면 component는 다시 렌더링 되지 않을 것입니다.
 
