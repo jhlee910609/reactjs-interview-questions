@@ -68,7 +68,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |5  | [React components 만드는 법](#React-components-만드는-법) |
 |6  | [Functional Component 대신 Class Component를 쓰는 경우](#functional-component-대신-class-component를-쓰는-경우) |
 |7  | [Pure Component란?](#pure-component란) |
-|8  | [React의 state(상태)란?](#react의-상태state란) |
+|8  | [React의 state(상태)란?](#react의-state상태란) |
 |9  | [React의 props(속성)이란?](#react의-속성props이란) |
 |10 | [What is the difference between state and props?](#what-is-the-difference-between-state-and-props) |
 |11 | [상태(state)를 직접 업데이트하면 안되는 이유.](#상태state를-직접-업데이트하면-안되는-이유) |
