@@ -77,7 +77,7 @@ You can download the PDF and Epub version of this repository from the latest run
 |13 | [What is the difference between HTML and React event handling?](#what-is-the-difference-between-html-and-react-event-handling) |
 |14 | [How to bind methods or event handlers in JSX callbacks?](#how-to-bind-methods-or-event-handlers-in-jsx-callbacks) |
 |15 | [How to pass a parameter to an event handler or callback?](#how-to-pass-a-parameter-to-an-event-handler-or-callback) |
-|16 | [What are synthetic events in React?](#what-are-synthetic-events-in-react) |
+|16 | [React에서 합성 이벤트(SyntheticEvent)는 무엇입니까?](#React에서-합성-이벤트SyntheticEvent는-무엇입니까) |
 |17 | [What are inline conditional expressions?](#what-are-inline-conditional-expressions) |
 |18 | [What is "key" prop and what is the benefit of using it in arrays of elements?](#what-is-key-prop-and-what-is-the-benefit-of-using-it-in-arrays-of-elements) |
 |19 | [What is the use of refs?](#what-is-the-use-of-refs) |
@@ -740,9 +740,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **[⬆ Back to Top](#table-of-contents)**
     
-16. ### What are synthetic events in React?
+16. ### React에서 합성 이벤트(SyntheticEvent)는 무엇입니까?
 
-    `SyntheticEvent` is a cross-browser wrapper around the browser's native event. It's API is same as the browser's native event, including `stopPropagation()` and `preventDefault()`, except the events work identically across all browsers.
+    `합성 이벤트(SyntheticEvent)`는 브라우저의 기본 이벤트에 대한 크로스-브라우저 래퍼입니다. `합성 이벤트(SyntheticEvent)`의 API는 이벤트가 모든 브라우저에서 동일하게 작동한다는 점을 제외하고는 `stopPropagation()`과 `preventDefault()`를 포함한 브라우저의 기본 이벤트와 동일하게 작동합니다.
 
 
    **[⬆ Back to Top](#table-of-contents)**
